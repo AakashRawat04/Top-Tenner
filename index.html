@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="style.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
      <title>TopTenner </title>
      <style>
-          .toptenner{
+          .toptenner {
                font-family: 'Silkscreen', cursive;
+          }
+
+          .searchBarFont {
+               font-family: 'Ubuntu', sans-serif;
           }
      </style>
 </head>
+
 <body class="bg-black">
      <nav class="bg-slate-800 px-6 h-20 flex justify-center">
           <div class="text-4xl pl-10 font-mono pt-5 font-bold tracking-normal text-cyan-600 toptenner">Top-Tenner</div>
 
           <div class="">
-               <input type="search" class="h-8 border-2 mt-6 ml-36 rounded-2xl transition ease-in-out focus:text-black focus:outline-none text-center p-3 text-xl bg-slate-700 border-none " placeholder="Search">
+               <input type="search"
+                    class="h-8 border-2 mt-6 ml-36 rounded-2xl transition ease-in-out focus:text-black focus:outline-none text-center p-3 text-xl bg-slate-700 border-none "
+                    placeholder="Search">
           </div>
      </nav>
      <main class="main flex justify-center">
-          <div class="w-4/5 bg-slate-600 pl-10 pt-5">
-               Results :- 
-               <div class="bg-slate-700">
-                    thek ha bhai 
+          <div class="w-4/5 bg-slate-700 pl-10 pt-0 flex flex-col">
+               <div class="optionBar flex justify-center">
+                    <div class=" bg-red-500 w-3/5 ">
+                         <ul class="flex items-center justify-center space-x-9 searchBarFont ">
+                              <li class="hover:cursor-pointer">All Results</li>
+                              <li class="hover:cursor-pointer">News</li>
+                              <li class="hover:cursor-pointer">Images</li>
+                              <li class="hover:cursor-pointer">videos</li>
+                         </ul>
+                    </div>
+               </div>
+               Results :-
+               <div class="bg-slate-600 m-6">
+                    results elaborated
                </div>
           </div>
      </main>
 
      <script src="app.js"></script>
 </body>
+
 </html>
