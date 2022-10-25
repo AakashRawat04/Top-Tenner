@@ -22,39 +22,44 @@
      </style>
 </head>
 
-<body class="bg-black">
+<body class="bg-violet-900">
      <nav class="bg-slate-800 px-6 h-20 flex justify-center">
           <div class="text-4xl pl-10 font-mono pt-5 font-bold tracking-normal text-cyan-600 toptenner">Top-Tenner</div>
 
           <div class="">
-               <input type="search"
+               <form>
+                    <input type="search"
                     class="h-8 border-2 mt-6 ml-36 rounded-2xl transition ease-in-out focus:text-black focus:outline-none text-center p-3 text-xl bg-slate-700 border-none "
                     placeholder="Search">
-          </div>
+
+                    <button type="submit">Go</button>
+               </div>
+          </form>
      </nav>
      <div class="navbar bg-blue-400 flex flex-row justify-center ">
-          <ul class="flex flex-row p-1 text-lg font-medium text-white">
-               <li class="px-5 " id="allResults">All results</li>
-               <li class="px-5 " id="newsResults">News</li>
-               <li class="px-5 " id="imageResults">images</li>
-               <li class="px-5 " id="videoResults">videos</li>
+          <ul class="flex flex-row p-1 text-lg font-medium text-black">
+               <li class="px-5 hover:cursor-pointer hover:text-rose-600 hover:font-bold" id="allResults">All results</li>
+               <li class="px-5 hover:cursor-pointer hover:text-rose-600 hover:font-bold" id="newsResults">News</li>
+               <li class="px-5 hover:cursor-pointer hover:text-rose-600 hover:font-bold" id="imageResults">images</li>
+               <li class="px-5 hover:cursor-pointer hover:text-rose-600 hover:font-bold" id="videoResults">videos</li>
           </ul>
      </div>
 
      <div class="flex justify-center text-white">
      <div class="grid grid-cols-1 w-3/5">
 
-          <div class="mt-7 border border-blue-400 p-3 hover:border-green-500 ">
-               <div class="heading text-xl font-bold hover:underline hover:text-blue-700">
+          <div class="mt-10 hover:shadow-xl border-2 rounded-md border-transparent p-5 bg-purple-700 transition ease-in-out delay-75 hover:-translate-y-0 hover:scale-110 duration-200 hover:shadow-cyan-500/20 ">
+               <span class="heading text-xl font-bold hover:underline hover:text-blue-400 hover:cursor-pointer ">
+                    <a href="https://google.com">
                     Heading
-               </div>
-               <div class="p-1">
+                    </a>
+               </span>
+               <hr class="border border-cyan-400 my-2">
+               <div class="p-1 text-black">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt facilis a commodi quam fuga nihil eius perspiciatis harum necessitatibus, placeat, error, consequuntur corrupti.
                </div>
           </div>
-          <div class="mt-7 border border-blue-400">
-               hello 
-          </div>
+          
      </div>
      </div>
      <script src="app.js"></script>
