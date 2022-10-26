@@ -28,13 +28,14 @@
 
           <div class="">
                <form>
-                    <input type="search"
+                    <input type="text"
                     class="h-8 border-2 mt-6 ml-36 rounded-2xl transition ease-in-out focus:text-black focus:outline-none text-center p-3 text-xl bg-slate-700 border-none "
-                    placeholder="Search">
+                    placeholder="Search" name="search_bar">
 
-                    <button type="submit">Go</button>
-               </div>
-          </form>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 ml-3 rounded
+                    ">Search</button>
+               </form>
+          </div>
      </nav>
      <div class="navbar bg-blue-400 flex flex-row justify-center ">
           <ul class="flex flex-row p-1 text-lg font-medium text-black">
@@ -46,11 +47,11 @@
      </div>
 
      <div class="flex justify-center text-white">
-     <div class="grid grid-cols-1 w-3/5">
+     <div class="grid grid-cols-1 w-3/5 results-section">
 
           <div class="mt-10 hover:shadow-xl border-2 rounded-md border-transparent p-5 bg-purple-700 transition ease-in-out delay-75 hover:-translate-y-0 hover:scale-110 duration-200 hover:shadow-cyan-500/20 ">
                <span class="heading text-xl font-bold hover:underline hover:text-blue-400 hover:cursor-pointer ">
-                    <a href="https://google.com">
+                    <a href="https://google.com" id="heading">
                     Heading
                     </a>
                </span>
