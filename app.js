@@ -14,9 +14,9 @@ const options = {
 // 	.catch(err => console.error('error:' + err));
 
 async function getAllResults(query) {
-	const url = `https://google-search-2.p.rapidapi.com/organicResults?query=${query}&num=10&gl=us&hl=en&page=0&nfpr=0&device=desktop`;
+	const url = `https://google-search-2.p.rapidapi.com/organicResults?query=${query}&num=10&gl=us&hl=en&page=1&nfpr=0&device=desktop`;
 	console.log("get all results page.");
-	fetch(url, options)
+	await fetch(url, options)
 		.then((res) => res.json())
 		.then((json) => {
 			for (i = 0; i < json.organic_results.length; i++) {
@@ -41,6 +41,7 @@ async function getAllResults(query) {
 				//a tag for heading
 				const heading_link = document.getElementById("heading");
 				heading_link.setAttribute("href", `${json.organic_results[i].link}`);
+				heading_link.innerText = heading;
 
 				//injecting anchor tag in span
 				result_heading.appendChild(heading_link);
@@ -56,6 +57,7 @@ async function getAllResults(query) {
 				//discruption
 				const discruption = document.createElement("div");
 				discruption.classList.add("p-1 text-black");
+				discruption.innerText = json.organic_results[i].snippet;
 				result_element.appendChild(discruption);
 
 				//adding the final div to the main div
